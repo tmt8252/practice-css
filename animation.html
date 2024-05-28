@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <style>
+    .rotate {
+      background-color: red;
+      height: 200px;
+      width: 200px;
+      transform: rotate(45deg);
+    }
+    /* .scale {
+      background-color: aqua;
+      width: 400px;
+      height: 400px;
+      animation-name: scale;
+      animation-duration: 5s;
+      animation-iteration-count: infinite;
+    } */
+    .box {
+      background-color: black;
+      width: 500px;
+      height: 500px;
+      animation-name: box;
+      animation-duration: 10s;
+      animation-iteration-count: infinite;
+      animation-delay: 2s;
+      position: relative;
+    }
+
+    @keyframes scale {
+      0% {
+        background-color: red;
+      }
+      100% {
+        background-color: green;
+        transform: scale(1.5, 1.5);
+      }
+    }
+
+    @keyframes box {
+      0% {
+        background-color: blueviolet;
+        top: 0;
+        left: 0;
+      }
+      25% {
+        background-color: blue;
+        top: 0;
+        left: 500px;
+        transform: rotate(60deg);
+      }
+      50% {
+        background-color: coral;
+        top: 400px;
+        left: 700px;
+        transform: scaleY(1.5);
+      }
+      75% {
+
+        background-color: cadetblue;
+        top: 500px;
+        left: 200px;
+        transform: rotate(360deg);
+
+      }
+      100% {
+        background-color: aquamarine;
+        top: 0;
+        left: 0;
+        
+      }
+    }
+  </style>
+  <body>
+    <div class="rotate"></div>
+
+    <div class="scale"></div>
+
+    <div class="box"></div>
+  </body>
+</html>

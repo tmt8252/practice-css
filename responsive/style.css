@@ -1,0 +1,170 @@
+@import url("https://fonts.googleapis.com/css2?family=Chilanka&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Chilanka", serif;
+  font-style: normal;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+}
+
+.h_1 {
+  display: flex;
+  position: relative;
+  align-items: center;
+  padding: 2rem 0 !important;
+
+  .logo {
+    margin-left: 100px;
+    left: 100px;
+  }
+
+  .phn {
+    position: absolute;
+    right: 350px;
+  }
+  .email {
+    position: absolute;
+    right: 150px;
+  }
+  .enum {
+    font-size: 19px;
+  }
+  .txt {
+    text-align: right;
+    opacity: 0.6;
+    font-family: "Montserrat";
+    padding: 10px 0;
+  }
+}
+
+.search {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #b7b5b5;
+  width: 550px;
+  height: 55px;
+  left: 100px;
+  border-radius: 5px;
+
+  i {
+    position: absolute;
+    z-index: 50;
+    right: 20px;
+    font-size: 18px;
+  }
+  .searchInput {
+    position: absolute;
+    width: 470px;
+    height: 40px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    border-radius: 3px;
+    font-family: inherit;
+  }
+}
+
+::placeholder {
+  font-family: "Montserrat";
+  font-weight: 350;
+}
+
+hr {
+  width: 95%;
+  margin: auto;
+  opacity: 0.3;
+}
+
+
+.nav {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+  align-items: center;
+}
+
+.nav select {
+  border: none;
+  font-family: inherit;
+  outline: none;
+  font-size: 16px;
+  height: 5vh;
+}
+
+.links {
+  display: flex;
+  gap: 30px;
+  
+  li {
+    list-style: none;
+  }
+  li:hover {
+    color: goldenrod;
+    cursor: pointer;
+  }
+  li:nth-child(1) {
+    color: goldenrod;
+  }
+  li:nth-child(7) {
+    font-weight: 600;
+  }
+  li:nth-child(7):hover {
+    color: inherit;
+  }
+  
+}
+
+.icons i {
+  padding: 15px;
+  font-size: 18px;
+}
+
+.background {
+  background-color: #f9f3ec;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  .img img {
+    padding: 30px 50px;
+    width: 500px;
+  }
+  .text p{
+    padding-bottom: 10px;
+    color: rgb(219 170 109);
+    font-family: "Montserrat",serif;
+  }
+  .text h2{
+    padding-bottom: 20px;
+    color: #41403e;
+    font-size: 80px;
+    font-weight: 300;
+  }
+  .text h2 span{
+    color: rgb(219 170 109);
+  }
+  .text button{
+    font-size: 17px;
+    font-family: "Chilanka", serif;
+    padding: 20px 50px;
+    background-color: transparent;
+    border-radius: 3px;
+    border: 1px solid rgb(167, 165, 165);
+    transition: .7s;
+  }
+}
+.text button:hover{
+  color: #f9f3ec;
+  background-color: #41403E;
+}
+.text{
+  padding: 20px 60px;
+}
